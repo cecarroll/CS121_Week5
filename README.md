@@ -11,7 +11,7 @@ classDiagram
       -int horseLabel
       -int horsePosition 
       + Horse()
-      + init(int horseLabel, int horsePosition)   
+      + init(int horseLabel, int trackLength)   
       + bool isWinner()
       + advance()
       + printLane()
