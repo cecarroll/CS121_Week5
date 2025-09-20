@@ -9,15 +9,15 @@ class Horse {
 		int trackLength;
 	public:
 		Horse();
-		init(int horseLabel, int trackLength);
+		Horse init(int horseLabel, int trackLength);
 		bool isWinner();
 		void advance();
 		void printLane();
 		int getPosition();
 		int getID();
 		int getTrackLength();
-		setPosition();
-}
+		void setPosition();
+};
 
 
 #endif

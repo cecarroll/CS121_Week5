@@ -12,7 +12,7 @@ class Race {
 	public:
 		Race();
 		void start();
-}
+};
 
 
 #endif
