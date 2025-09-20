@@ -3,6 +3,7 @@
 
 class Horse {
 	private:
+	    const static int NUM_HORSES = 5;
 		int position;
 		int id;
 		int trackLength;
@@ -11,7 +12,11 @@ class Horse {
 		init(int horseLabel, int trackLength);
 		bool isWinner();
 		void advance();
-		void printLane();		
+		void printLane();
+		int getPosition();
+		int getID();
+		int getTrackLength();
+		setPosition();
 }
 
 
