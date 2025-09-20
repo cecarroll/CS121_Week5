@@ -4,6 +4,10 @@
 
 int main(){
 	std::cout << "Hello World.! :)" << std::endl;
-return 0;
+	
+	Horse horse;
+	//horse.init(2, 15);
+	//std::cout << horse.getPosition() << std::endl; 
 
+	return 0;
 };

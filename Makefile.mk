@@ -11,3 +11,8 @@ race.o: race.cpp race.h horse.h
 main.o: main.cpp horse.h race.h
 	g++ -c main.cpp
 
+clean:
+	rm -f *.o
+	rm game
+run: game
+	./game
