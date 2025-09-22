@@ -6,11 +6,16 @@
 
 class Race {
 	private:
-		const int NUM_HORSES = 5;
+		static const int NUM_HORSES = 5;
 		const int TRACK_LENGTH = 15;
 		bool keepGoing;
+		Horse roster[NUM_HORSES];
 	public:
 		Race();
+		int getNUM_HORSES();
+		int getTRACK_LENGTH();
+		int getKeepGoing();
+		void setKeepGoing(bool);
 		void start();
 };
 
