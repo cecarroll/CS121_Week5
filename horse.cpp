@@ -1,4 +1,6 @@
 #include <string> 
+#include <iostream>
+#include <ctime>
 #include "horse.h"
 
 
@@ -25,11 +27,11 @@ int Horse::getPosition(){
 void Horse::setPosition(int position){
 	Horse::position = position;
 }
-/* 
-void printLane(Horse horse){
-  int id = horse.getID();
-  for (int i = 0 ; i < horse.getTrackLength() ; i++){
-    if ( i == horse.getPosition()){
+
+void Horse::printLane(){
+  
+  for (int i = 0 ; i < trackLength ; i++){
+    if ( i == position){
       std::cout<< id; 
     }
     else{
@@ -38,4 +40,12 @@ void printLane(Horse horse){
   }
   std::cout << std:: endl;
 }
-*/
+
+void Horse::advance() {
+  
+  int movement = std::rand() % 2;
+  int newposition = position + movement;
+  position = newposition;
+}//end advance
+
+
