@@ -26,7 +26,7 @@ classDiagram
 
 
 Algorithm for HorseRace OOP
-
+```
 Create 5 horses in an array with IDs of 0-4 integers
 Set track length. 
 set number of horses to 5 ;
@@ -53,15 +53,15 @@ while there is no winner
             set our keepgoing in race to result 
 
 //advance method of class horse, so it knows it's operating on a specific horse and can call its attributes. 
-generate random number
-modulus it by 2
-add that to the horse's position
-return nothing
+    generate random number
+    modulus it by 2
+    add that to the horse's position
+    return nothing
 
 //void printlane method of horse, which will be called on each horse and print the track with the horse on it, using the horse's id, its position, and the tracklength
-print periods times horse position
-print horse label
-print (track length minus horseposition) periods
+    print periods times horse position
+    print horse label
+    print (track length minus horseposition) periods
 
 //bool isWinner() I'd have this belong to horse so that we have access to the horse's position, and we can return a bool back into race, which will be where the while loop is stored. 
 initialize local keepgoing
@@ -73,5 +73,5 @@ if track length = horse position,
 return keepgoing
 
 
-
+```
 
