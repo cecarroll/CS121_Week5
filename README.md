@@ -37,13 +37,17 @@ start the race somehow (enter from c.in.get)
 end line
 print start your engines
 
+call start()
 
+//start running inside of class Race
+for each horse
+initialize id and tracklength as tracklength from Race class
 while there is no winner
     ask for "enter" before each round of play  
     for each horse in the array 
         see whether or not the horse advances()
         print the horse's lane(printlane())
-        check if any of the horses' positions are equal to the tracklength (is winner()).
+        check if any of the horses (is winner()).
         if result is false
             Take the result 
             set our keepgoing in race to result 
@@ -60,10 +64,14 @@ print horse label
 print (track length minus horseposition) periods
 
 //bool isWinner() I'd have this belong to horse so that we have access to the horse's position, and we can return a bool back into race, which will be where the while loop is stored. 
+initialize local keepgoing
 if track length = horse position, 
     set bool horse-local keepgoing to false
     print that the current horse.horselabel won the race (technically two could be printed at winning)
+    else
+    set keepgoing to true
 return keepgoing
+
 
 
 

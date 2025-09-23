@@ -4,14 +4,14 @@
 
 class Horse {
 	private:
-	    const static int NUM_HORSES = 5;
+	    const static  int NUM_HORSES = 5;
 		int position;
 		int id;
 		int trackLength;
 	public:
 		Horse();
 		void init(int horseLabel, int trackLength);
-		bool isWinner(Horse horse);
+		bool isWinner();
 		void advance();
 		void printLane();
 		int getPosition();

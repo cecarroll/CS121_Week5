@@ -42,10 +42,19 @@ void Horse::printLane(){
 }
 
 void Horse::advance() {
-  
   int movement = std::rand() % 2;
   int newposition = position + movement;
   position = newposition;
 }//end advance
-
+bool Horse::isWinner(){
+    bool keepGoing;
+    if(position>= trackLength){
+        std::cout << "Horse " << id << " has won!" << std::endl;
+        keepGoing = false;
+    }else{
+        keepGoing = true;
+      
+    }
+    return keepGoing;
+}
 
